@@ -1,4 +1,4 @@
-name: Deploy-postgresql-api- dulceria
+name: Deploy-postgresql-api-dulceria
 
 on:
   push:
