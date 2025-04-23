@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      nombre: {
+      nombreDulces: {
         type: Sequelize.STRING
       },
       precio: {
@@ -19,6 +19,12 @@ module.exports = {
       },
       descripcion: {
         type: Sequelize.TEXT
+      },
+      color: {
+        type: Sequelize.STRING
+      },
+      sabor: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

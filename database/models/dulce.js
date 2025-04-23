@@ -14,10 +14,15 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Dulce.init({
-    nombre: DataTypes.STRING,
+    nombreDulces: DataTypes.STRING,
     precio: DataTypes.DECIMAL(10,2),
     cantidad: DataTypes.INTEGER,
-    descripcion: DataTypes.TEXT
+    descripcion: DataTypes.TEXT,
+    color: DataTypes.STRING,
+    sabor: DataTypes.STRING
+
+
+    
   }, {
     sequelize,
     modelName: 'Dulce',

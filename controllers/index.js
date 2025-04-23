@@ -39,10 +39,12 @@ const updateDulce  = async (req,  res)  =>  {
       const dulce = await models.Dulce.findOne({ where: { id: req.params.id } });
       if (dulce) {
          console.log(dulce);
-     dulce.nombre = req.body.nombre;
-     dulce.precio = req.body.precio;
-     dulce.cantidad = req.body.cantidad;
-     dulce.descripcion = req.body.descripcion;
+         dulce.nombreDulces = req.body.nombreDulces;
+         dulce.precio = req.body.precio;
+         dulce.cantidad = req.body.cantidad;
+         dulce.descripcion = req.body.descripcion;
+         dulce.color = req.body.color;
+         dulce.sabor = req.body.sabor;
      await dulce.save();
       }
       else {
